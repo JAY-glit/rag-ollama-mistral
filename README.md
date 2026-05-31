@@ -1,4 +1,3 @@
-# rag-ollama-mistral
 <h1 align="center">🧠 RAG System — Ollama Mistral + AuraDB</h1>
 <p align="center"><b>Context-Aware AI Responses using Knowledge Graphs + Vector Search</b></p>
 
@@ -14,9 +13,7 @@
 
 ## 📌 Overview
 
-A **Retrieval-Augmented Generation (RAG)** system that combines a local LLM (Ollama Mistral) with a Neo4j AuraDB knowledge graph to deliver context-aware, structured AI responses.
-
-Instead of relying on LLM memory alone, this system retrieves relevant facts from a **triplet-based knowledge graph** and feeds them into the model for grounded, accurate answers.
+A **Retrieval-Augmented Generation (RAG)** system that combines a local LLM (Ollama Mistral) with a Neo4j AuraDB knowledge graph to deliver context-aware, structured AI responses. Instead of relying on LLM memory alone, this system retrieves relevant facts from a **triplet-based knowledge graph** and feeds them into the model for grounded, accurate answers.
 
 ---
 
@@ -64,56 +61,19 @@ Instead of relying on LLM memory alone, this system retrieves relevant facts fro
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Python 3.10+
-- [Ollama](https://ollama.ai) installed and running
-- Neo4j AuraDB account (free tier works)
-
-### 1. Clone
 ```bash
-git clone https://github.com/jaydurga1290-dot/rag-ollama-mistral.git
+git clone https://github.com/JAY-glit/rag-ollama-mistral.git
 cd rag-ollama-mistral
-```
-
-### 2. Install dependencies
-```bash
 pip install -r requirements.txt
-```
-
-### 3. Pull the Mistral model
-```bash
 ollama pull mistral
-```
-
-### 4. Configure environment
-```bash
-cp .env.example .env
-# Add your Neo4j AuraDB credentials to .env
-```
-
-### 5. Run
-```bash
-python ingest.py      # Load and embed documents
-python query.py       # Start asking questions
-```
-
----
-
-## 📁 Structure
-
-```
-rag-ollama-mistral/
-├── ingest.py          # Document ingestion + embedding
-├── query.py           # RAG query interface
-├── graph_builder.py   # Knowledge graph construction
-├── config.py          # Neo4j + Ollama config
-├── requirements.txt
-└── .env.example
+cp .env.example .env   # Add your Neo4j AuraDB credentials
+python ingest.py       # Load and embed documents
+python query.py        # Start asking questions
 ```
 
 ---
 
 ## 👨‍💻 Author
 
-**JAY (Alladi Jaydurga)**  
-📧 jaydurga1290@gmail.com · [LinkedIn](https://www.linkedin.com/in/jaydurga) · [GitHub](https://github.com/jaydurga1290-dot)
+**JAY (Alladi Jaydurga)**
+📧 jaydurga1290@gmail.com · LinkedIn: https://www.linkedin.com/in/jaydurga · GitHub: https://github.com/JAY-glit
